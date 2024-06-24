@@ -1,0 +1,57 @@
+{
+  "name": "do-the-thing",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "chores and errands schedule",
+  "main": "index.js",
+  "scripts": {
+    "start:client": "vite",
+    "start:server": "nodemon server/index",
+    "start": "run-p start:client start:server",
+    "dev": "nodemon server/index",
+    "knex": "knex --knexfile ./server/db/knexfile.js",
+    "test": "vitest",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier -w '**/*.{js,jsx,ts,tsx}'",
+    "build": "run-s build:client build:server",
+    "build:client": "vite build",
+    "build:server": "esbuild --packages=external --platform=node --format=esm --outfile=dist/server.js --bundle server/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucyMoore/Do-The-Thing.git"
+  },
+  "keywords": [
+    "chores",
+    "errands"
+  ],
+  "author": "lucyMoore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LucyMoore/Do-The-Thing/issues"
+  },
+  "homepage": "https://github.com/LucyMoore/Do-The-Thing#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "knex": "^3.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "superagent": "^8.1.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/react-dom": "^18.2.23",
+    "@types/superagent": "^8.1.6",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}
