@@ -6,6 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
+    "start:client": "vite",
+    "start:server": "nodemon server/index",
+    "start": "run-p start:client start:server",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
@@ -21,16 +24,17 @@
   },
   "homepage": "https://github.com/LucyMoore/Do-The-Thing#readme",
   "dependencies": {
+    "express": "^4.19.2",
     "nodemon": "^3.1.4"
-   
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
-    "typescript": "^5.2.2",
-    "vite": "^5.3.1",
+    "npm-run-all": "^4.1.5",
     "react": "^18.0.2",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.2"
+    "react-router-dom": "^6.11.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1"
   }
 }

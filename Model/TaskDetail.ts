@@ -1,6 +1,6 @@
 export interface TaskDetail {
   name: string
-  date: Date
+  dueDate: number
   repeat: boolean
   frequency: number
 }
