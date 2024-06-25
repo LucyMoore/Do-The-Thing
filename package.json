@@ -1,0 +1,23 @@
+{
+  "name": "do-the-thing",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "an app to help keep my ADHD self ontop of tasks and chores",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LucyMoore/Do-The-Thing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucyMoore/Do-The-Thing/issues"
+  },
+  "homepage": "https://github.com/LucyMoore/Do-The-Thing#readme",
+  "dependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
