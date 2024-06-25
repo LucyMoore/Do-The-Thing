@@ -5,7 +5,10 @@
   "description": "an app to help keep my ADHD self ontop of tasks and chores",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,15 @@
   "homepage": "https://github.com/LucyMoore/Do-The-Thing#readme",
   "dependencies": {
     "nodemon": "^3.1.4"
+   
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "react": "^18.0.2",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
   }
 }
