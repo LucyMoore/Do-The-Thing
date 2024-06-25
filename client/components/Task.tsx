@@ -4,8 +4,10 @@ import { TaskDetail } from '../../Model/TaskDetail'
 function Task() {
   return (
     <>
-      <h1>Task: {task.name} </h1>
-      <p>due on: {task.dueDate} </p>
+      <div id="task">
+        <h1>Task: {task.name} </h1>
+        <p>due on: {task.dueDate} </p>
+      </div>
     </>
   )
 }
