@@ -1,1 +1,10 @@
 /* styles for the tasks */
+#column {
+  border: 2px solid black;
+  height: 400px;
+  width: 200px;
+}
+
+section {
+  display: flex;
+}

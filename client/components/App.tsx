@@ -4,7 +4,11 @@ import Task from './Task'
 function App() {
   return (
     <>
-      <h1>APP</h1>
+      <h1>YOU CAN DO ALL THE THINGS</h1>
+      <section>
+        <Column title="To Do" />
+        <Column title="Over Due" />
+      </section>
     </>
   )
 }

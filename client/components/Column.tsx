@@ -1,9 +1,12 @@
 import React from 'react'
-
-function Column() {
+import Task from './Task'
+function Column(props: { title: string }) {
   return (
     <>
-      <h1>Column</h1>
+      <div id="column">
+        {props.title}
+        <Task></Task>
+      </div>
     </>
   )
 }
