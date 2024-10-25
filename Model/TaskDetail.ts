@@ -1,6 +1,7 @@
 export interface TaskDetail {
   name: string
-  dueDate: number
+  dueDate: Date | null
   repeat: boolean
   frequency: number
+  completedDate: Date | null
 }
