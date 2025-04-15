@@ -1,12 +1,12 @@
-import db from './db'
+import db from './db.js'
 
 //get single task by id
-export function getTaskByID() {
-  const test = db('Tasks')
+async function getTaskByID(taskId) {
+  const test = await db('Tasks')
     .select()
-    .where({ id: 1 })
+    .where({ id: taskId })
     .then((task) => {
-      console.log(task)
+      console.log(task, 'Task')
     })
 }
 
@@ -15,3 +15,4 @@ export function getTaskByID() {
 //add a new task
 
 // get all tasks due in th enext week
+export default getTaskByID
