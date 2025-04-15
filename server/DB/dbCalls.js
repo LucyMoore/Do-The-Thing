@@ -7,8 +7,24 @@ export async function getTaskByID(taskId) {
 }
 
 //get all tasks
+export async function getAllTasks(taskId) {
+  const tasks = await db('Tasks').select()
+  console.log(tasks.length)
+  return tasks
+}
 
 //add a new task
+export async function addNewTask(newTask) {
+  let nextDue = new Date()
+  nextDue.setDate(nextDue.getDate + 5)
+  const taskAdded = await db('Tasks').insert({
+    name: 'clean stove',
+    details: 'clean the top and back',
+    dueDate: nextDue,
+  })
+  console.log(tasks.length)
+  return tasks
+}
 
-// get all tasks due in th enext week
+// get all tasks due in the next week
 // export default getTaskByID
